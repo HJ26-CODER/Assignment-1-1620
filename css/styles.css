@@ -8,8 +8,6 @@
     --delete-button: #b4637a;
 }
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -18,8 +16,6 @@
 body {
     background-color: var(--main-background);
 }
-
-
 
 p, a, li {
     color: var(--main-text);
@@ -47,15 +43,11 @@ nav>ul {
     margin: 0 10px;
 }
 
-
-
 .wrapper {
     display: grid;
     grid-auto-rows: 200px;
     grid-template-areas: "b a a ." "b a a .";
 }
-
-
 
 .new-note {
     grid-area: a;
@@ -100,8 +92,6 @@ nav>ul {
     color: var(--delete-button);
 }
 
-
-
 .plus {
     width: 40px;
     height: 40px;
@@ -112,29 +102,41 @@ nav>ul {
     float: left;
 }
 
+.np {
+    margin-left: -850px;
+    margin-top: 85px;
+}
+
 .hj-menu-button {
     grid-area: b;
-    padding-left: 10px;
+    padding-left: 10px;  
+}
+.hj-menu-button>button {
+    margin-top: 10px;
+    background-color:var(--secondary-background);
+    border-color:var(--secondary-background) ; 
+    
 }
 
 .hj-menu {
     grid-area: b;
     text-align: center;
     background-color: var(--textarea-background);
-    min-height: 90vh;
+    min-height: 90vh;  
 }
 
-.hj-menu>p {
+.hj-menu>button {
     margin-top: 15px;
     margin-bottom: 15px;
-    text-decoration: underline;
+    text-decoration: solid;
+    margin-left: 50px;
+    margin-right: -300px;
+    background-color:var(--textarea-background);
+    border-color:var(--secondary-background) ;
 }
-
 .note-list {
     list-style-type: disc;
 }
-
-
 
 .line {
     width: 30px;
