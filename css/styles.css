@@ -41,7 +41,29 @@
     margin-left: -100px;
     margin-top: -100px;
 }
+.new-note>p {
+    padding-top: 8px;
+    display: inline-block;
+}
 
+.new-note>textarea {
+    padding-top: 5px;
+    padding-left: 10px;
+    font-family: 'Roboto Mono', monospace;
+    background-color: blue;
+    color: navajowhite;
+    text-align: center;
+    position:initial;
+    margin-top: 400px;
+    margin-left: 800px;
+    border: none;
+    margin-left: 200px;
+    
+}
+
+.new-note>textarea:focus {
+    outline: 3px solid ;
+}
 .plus {
     width: 40px;
     height: 40px;
@@ -65,17 +87,18 @@
 }      
 
 .hj-menu>button {
-    margin-top: 30px;
-    margin-bottom: 15px;
+    margin-top: 400px;
+    
     text-decoration: solid;
-    margin-left: -150px;
+    margin-left: 100px;
 
 } 
 
 .note-buttons {
-    margin-top: 5px;
-    margin-right: -20px;
-    text-align: right;
+    
+    text-align:center;
+    position:sticky;
+    
 }
 
 li.About-header{
@@ -129,7 +152,7 @@ div>button{
     margin-bottom: 15px;
     text-decoration: solid;
     margin-left: 50px;
-    margin-right: -300px;
+    
 }
 
 li {
@@ -164,3 +187,5 @@ footer {
       }
     
 }
+    
+    
