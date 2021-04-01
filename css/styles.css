@@ -29,8 +29,9 @@
 
 .main {
     grid-area: m;
-    background-color: #9893a5;
-    
+    background-color: black;
+
+
 }
 
 .new-note {
@@ -41,8 +42,18 @@
     margin-top: -100px;
 }
 
-.note-list{
+.plus {
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: 50% 2px, 2px 50%;
+    background-repeat: no-repeat;
+    float: left;
+    border: brown;
+    background-color:bisque ;
+}
 
+.note-list{
     margin: 30px;
 }
 
@@ -142,13 +153,14 @@ footer {
 
 
 @media (max-width: 600px) {
-    .new-note {
-        display: none;
-    }
-    .nav-bar-side{
-        grid-area: s;
-        background-color: #f2e9de;
-        color: #f6c177;
-    }
+    .hj-container {
+        
+        grid-template-rows: 0.5fr 1fr 4fr 0.5fr;
+        grid-template-areas:
+          "h h"
+          "s s"
+          "m m"
+          "f f";
+      }
     
 }
