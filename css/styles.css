@@ -17,6 +17,18 @@
     height:100vh;
 }
 
+
+
+.hj-container-inner-grid {
+    
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, [col] 50px ) ;
+    grid-template-rows: repeat(4, [row] auto  );
+    background-color: #fff;
+    color: #fff;
+}
+
 .header {
     grid-area: h;
     background-color: #9893a5;
@@ -29,23 +41,39 @@
 
 .main {
     grid-area: m;
-    background-color: black;
-
-
+    
 }
 
+
+
 .new-note {
-    grid-area: m;
-    align-self: center;
-    justify-self: center;
-    margin-left: -100px;
-    margin-top: -100px;
+    grid-column: col  / span 4;
+    grid-row: row 2 / span 4;
+    display: grid;
+    grid-gap: 100px;
+    
+    grid-template-columns: 1fr 1fr 1fr ;
+    background-color: #fff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
 }
 .new-note>p {
     padding-top: 8px;
     display: inline-block;
 }
 
+.main-area{
+    grid-area: s;
+    background-color: blue;
+
+}
+.main-area>p {
+    
+    grid-column: 1;
+    grid-row: 1;
+}
 .new-note>textarea {
     padding-top: 5px;
     padding-left: 10px;
@@ -54,11 +82,9 @@
     color: navajowhite;
     text-align: center;
     position:initial;
-    margin-top: 400px;
-    margin-left: 800px;
     border: none;
-    margin-left: 200px;
-    
+    grid-column: 1 / 3;
+    grid-row: 1;
 }
 
 .new-note>textarea:focus {
@@ -73,6 +99,21 @@
     float: left;
     border: brown;
     background-color:bisque ;
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+.save {
+    grid-column: 2;
+    grid-row: 4 / 2;
+    margin-top: -100px;
+    margin-left: -5px;
+}
+
+.delete {
+    grid-column: 3;
+    grid-row: 4 / 2;
+    margin-top: -100px;
 }
 
 .note-list{
@@ -80,19 +121,21 @@
 }
 
 .hj-menu {
-    grid-area: s;
+    grid-area: m;
+    background-color: #fff;
     text-align: center;
-    margin-right: 1000px;
-    min-height: 90vh;
+    margin-top: 200px;
 }      
 
 .hj-menu>button {
-    margin-top: 400px;
-    
+    margin-top: 10px;
+    grid-area: s;
     text-decoration: solid;
-    margin-left: 100px;
+    margin-left:-1100px;
 
 } 
+
+
 
 .note-buttons {
     
